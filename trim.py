@@ -634,7 +634,7 @@ def readMotiontxt(motion):
 
 def get_old_blades(num_rotors):
     coll_old, rotor_names = [], []
-    motion_files = glob.glob(u"motion.r*.txt")
+    motion_files = natsort.natsorted(glob.glob(u"motion.r*.txt"))
     motion_files.remove("motion.ref.txt")
     for file in motion_files:
         if file != u'motion.ref.txt' and file != u'motion.txt_history':
