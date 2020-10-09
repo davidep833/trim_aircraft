@@ -1,0 +1,17 @@
+avg_over    = 72 # number of steps to average over fomoco
+trim_method = 1 # 1-front trimmed to drag back trimmed to zero torque,  2-all rotors trimmed to drag, and 3-trimmed to hover 
+Cdcoll      = 0.018767
+Cqcoll      = -0.011278 #0.0051556
+Cmtail      = 0.1 #0.05 
+trim_iters  = 1 # Number of trim iterations to run
+extra_force = 0.101 # in m^2
+gridgen_path= /shared/dep_runs/s421_half_ac/gridgen/working
+gridgen_file= gen_grids_rv
+tail_line   = 169 # This is dependent on which grid generation script we use.
+rotor_type  = blades # 'blades' or 'bem'
+
+
+#changing sign on cqcoll and halfing cdcoll
+#Cdcoll= 0.0068834
+#Cqcoll= 0.011278
+
